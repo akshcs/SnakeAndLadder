@@ -1,0 +1,23 @@
+server:
+  port: 8020
+  servlet:
+    context-path: '/LLD/snakeAndLadder'
+security:
+  ignored: /**
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  info:
+    env:
+      enabled: true
+info:
+  application:
+    name: Snake and Ladder Application
+    description: An Application for Snake and Ladder Game
+    author: Akash Singh
+    version: '@project.version@'
+spring:
+  profiles:
+    active: dev
