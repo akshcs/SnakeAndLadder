@@ -47,7 +47,7 @@ public class Game {
         }
     }
 
-    public void move(Player p){
+    private void move(Player p){
         moveToPos(p, diceService.roll(diceCount) + p.getCurrentPosition(), p.getCurrentPosition());
     }
 
